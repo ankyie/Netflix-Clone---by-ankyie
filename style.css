@@ -1,0 +1,597 @@
+/* This clone was made by ankyie - https://github.com/ankyie */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+::placeholder {
+    color: rgb(184, 184, 184);
+    opacity: 1; /* Firefox */
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    main{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+    section{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+    footer{
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+    .anchors{
+        flex-direction: column;
+        gap: 2vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .layer2 > h2{
+        font-size: 2.5em !important;
+    }
+    .layer2 > p{
+        font-size: 1em !important;
+    }
+    .inputs{
+        flex-direction: column;
+     }
+      
+    .tv-player{
+        scale: 60% !important;
+    }
+    .everywhere-player{
+        scale: 60% !important;
+    }
+    .mobile-player{
+        scale: 60% !important;
+    }
+    .children img{
+        scale: 60% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        height: 13% !important;
+    }
+    .nav-btn{
+        display: flex;
+    }
+    .nav-btn *{
+        padding: 0px 3px !important;
+        font-size: 1rem !important;
+    }
+    .layer2 > h2{
+        font-size: 2em !important;
+    }
+    .layer2 > p{
+        font-size: 1.2em !important;
+    }
+    .inputs{
+        flex-direction: column;
+     }
+    .tv-player{
+        scale: 50% !important;
+    }
+    .mobile-player{
+        scale: 50% !important;
+    }
+    .everywhere-player{
+        scale: 50% !important;
+    }
+    .children img{
+        scale: 50% !important;
+    }
+}
+
+@media screen and (max-width: 330px) { 
+    nav{
+        flex-direction: column;
+        height: 15% !important;
+    }
+    .nav-btn{
+        display: flex;
+    }
+    .nav-btn *{
+        padding: 0px 5px !important;
+        font-size: 1rem !important;
+    }
+    .layer2 > h2{
+        font-size: 1.5em !important;
+    }
+    .layer2 > p{
+        font-size: 0.7em !important;
+    }
+    .inputs{
+        flex-direction: column;
+     }
+    .tv-player{
+        scale: 30% !important;
+    }
+    .mobile-player{
+        scale: 30% !important;
+    }
+    .everywhere-player{
+        scale: 30% !important;
+    }
+    .children img{
+        scale: 30% !important;
+    }
+    .mobile-text h1 {
+        font-size: 2rem !important;
+    }
+    .mobile-text p{
+        font-size: 1.2rem !important;
+    }
+    .everywhere-text h1{
+        font-size: 2rem !important;
+    }
+    .everywhere-text p{
+        font-size: 1.2rem !important;
+    }
+    .children-text h1{
+        font-size: 2rem !important;
+    }
+    .children-text p{
+        font-size: 1.2rem !important;
+    }
+    .FAQ h1{
+        font-size: 2rem !important;
+    }
+    .FAQ p{
+        font-size: 1.2rem !important;
+    }
+    .inputs button{
+        font-size: 1.2rem !important;
+    }
+}
+.landing{
+    height: 85vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-position: center center;
+    background-size: max(2100px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.blackbox{
+    height: 85vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    position: absolute;
+    top: 0;
+}
+
+
+nav{
+    height: 9%;
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    padding: 10px;
+}
+
+nav .Logo{
+    height: 63%;
+}
+
+.nav-btn *{
+    margin: 8px;
+}
+
+.nav-btn select{
+    padding: 5px 30px 5px 15px;
+    background-color: rgba(19, 19, 19, 0.486);
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: medium;
+    color: white;
+}
+
+.nav-btn select:hover{
+    cursor: pointer;
+}
+
+.nav-btn button{
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: white;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.nav-btn button:hover{
+    background-color: rgb(193, 17, 25);
+    cursor: pointer;
+}
+
+.layer2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+}
+
+.layer2 > h2{
+    width: 75%;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+.layer2 p{
+    font-weight: 300;
+}
+
+.layer2 > p:nth-child(2){
+    font-size: 1.5em;
+    text-align: center;
+}
+.layer2 > p:nth-child(3){
+    text-align: center;
+    font-size: 1.25em;
+}
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 10px;
+}
+.inputs button{
+    padding: 8px 23px;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 4px;
+    background-color: red;
+    border: none;
+    color: white;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.inputs button:hover{
+    background-color: rgb(193, 17, 25);
+    cursor: pointer;
+}
+.inputs input{
+    padding: 13px 9vw 13px 10px;
+    font-size: medium;
+    width: auto;
+    background-color: rgba(19, 19, 19, 0.486);
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: white;
+}
+
+.line-separator{
+    height: 8px;
+    background-color: rgb(39, 39, 39);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    gap: 30px;
+}
+
+.tv *{
+    color: white;
+    /* width: 85%; */
+    margin: 20px;
+}
+
+.tv h1{
+    font-size: 50px;
+}
+
+.tv p{
+    font-size: 19px;
+}
+
+.tv-player{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    scale: 80%;
+}
+
+.tv-player img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.tv-player video{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+    top: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+/* .tv-player{
+    display: flex;
+    position: relative;
+}
+
+.tv-player video{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tv-player img{
+    width: 80%;
+} */
+
+.mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+}
+
+.mobile-player{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    scale: 80%;
+}
+
+.mobile-player img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.mobile-text{
+    color: white;
+}
+
+.downloading{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    gap: 10px;
+    position: relative;
+    top: 8rem;
+    border-radius: 15px;
+}
+
+.downloading img{
+    height: 4.8rem;
+}
+
+.down p:first-child{
+    color: white;
+}
+.down p:nth-child(2){
+    color: #0071eb;
+}
+
+.mobile *{
+    margin: 10px;
+}
+.mobile-text h1{
+    font-size: 3rem;
+}
+.mobile-text p{
+    font-size: 1.5rem;
+}
+
+.everywhere{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: auto;
+}
+
+.everywhere-text{
+    color: white;
+}
+
+.everywhere-text h1{
+    font-size: 3rem;
+}
+.everywhere-text p{
+    font-size: 1.5rem;
+}
+
+.everywhere-player{
+    display: grid;
+    position: relative;
+    scale: 80%;
+}
+
+.everywhere-player video{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: absolute;
+    top: 3.5rem;
+    left: 7rem;
+    z-index: -1;
+    width: 25.5rem;
+}
+.everywhere-player img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.children{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.children *{
+    color: white;
+}
+
+.children-text h1{
+    font-size: 3rem;
+}
+
+.children p{
+    font-size: 1.35rem;
+}
+
+.children img{
+    scale: 80%;
+}
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 85vw;
+    margin: auto;
+}
+
+.FAQ h1{
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.FAQ p{
+    font-size: 1.2rem;
+    margin-top: 2.2rem;
+    margin-bottom: 1.1rem;
+}
+
+.FAQ-questions{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.question-box{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    background-color: rgb(45,45,45);
+    padding: 1.5rem;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.question-box:hover{
+    cursor: pointer;
+    background-color: rgb(65, 65, 65);
+}
+
+.question-box h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.bottom-inputs{
+    margin-bottom: 4rem;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-flex > div:first-child{
+    color: rgba(255,255,255,0.7);
+    width: 73vw;
+    margin: auto;
+}
+
+.footer-flex > div:first-child a{
+    color: rgba(255,255,255,0.7);
+}
+
+.footer-flex > div:nth-child(4){
+    color: rgba(255,255,255,0.7);
+    width: 73vw;
+    margin: auto;
+    font-size: small;
+}
+
+.anchors{
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    width: 73vw;
+    margin: auto;
+    gap: 10vw;
+}
+
+.container{
+    display: flex;
+    gap: 10vw;
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 10px;
+}
+
+.columns a{
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+}
+
+.nav-btn-bottom{
+    width: 75vw;
+    margin: auto;
+}
