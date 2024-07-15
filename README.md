@@ -1,7 +1,7 @@
 
 # Netflix Clone
 
-This is a front end clone of the streaming website - Netflix
+This is a front end clone of Netflix's Homepage
 
 
 ## Deployment
